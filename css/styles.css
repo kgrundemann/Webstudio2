@@ -39,7 +39,8 @@ color: #212121;
 
 /* WebStudio */
 
-.logo{
+.navigation-logo{
+text-decoration: none;   
 font-family: var(--secondary-font);
 font-style: normal;
 font-weight: 700;
@@ -48,7 +49,18 @@ line-height: 1.192;
 letter-spacing: 0.03em;
 color: #2196F3;
 }
+.logo-black-text{
+    text-decoration: none;   
+    font-family: var(--secondary-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.192;
+    letter-spacing: 0.03em; 
+    color: #212121;
+}
 .navigation-link{
+    text-decoration: none;
 font-style: normal;
 font-weight: 500;
 font-size: 14px;
