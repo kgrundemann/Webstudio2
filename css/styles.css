@@ -20,9 +20,9 @@ body{
     align-items: center;
     text-align: center;
     background: var(--main-color);
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-border-radius: 4px;
-color: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    color: #FFFFFF;
 
 
 }
@@ -74,6 +74,15 @@ color: #2196F3;
     letter-spacing: 0.03em; 
     color: #212121;
 }
+.logo-black-text-footer{
+    font-family: var(--secondary-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.192;
+    letter-spacing: 0.03em; 
+    color: #FFFFFF;
+}
 .navigation-link{
 font-style: normal;
 font-weight: 500;
@@ -103,6 +112,9 @@ color:#757575
 /*==== END HEADER ===== */
 
 /*==== HERO ===== */
+.hero{
+    background: #2F303A;
+}
 .main-header{
 
 font-style: normal;
@@ -112,7 +124,6 @@ line-height: 1.364;
 text-align: center;
 letter-spacing: 0.06em;
 text-transform: uppercase;
-background: #2F303A;
  color: #FFFFFF; 
 }
 
@@ -150,6 +161,9 @@ letter-spacing: 0.03em;
 /*==== END ABOUT US ===== */
 
 /*==== OUR TEAM ===== */
+.our-team{
+    background:#F5F4FA;
+}
 .team-member-name{
 font-style: normal;
 font-weight: 500;
@@ -168,13 +182,16 @@ color: #757575;
 /*==== END OUR TEAM ===== */
 
 /*==== FOOTER ===== */
+.footer{
+    background: #2F303A;
+}
 .address-link-address{
 font-style: normal;
 font-weight: 400;
 font-size: 14px;
 line-height: 1.714;
 letter-spacing: 0.03em;
-/* color: #FFFFFF; */
+color: #FFFFFF;
 }
 .address-link{
 font-style: normal;
@@ -182,7 +199,7 @@ font-weight: 400;
 font-size: 14px;
 line-height: 1.714;
 letter-spacing: 0.03em;
-/* color: rgba(255, 255, 255, 0.6); */
+color: rgba(255, 255, 255, 0.6); 
 }
 .address-link-address:hover,
 .address-link:hover{
