@@ -1,0 +1,164 @@
+:root{
+    --main-font:'Roboto', sans-serif;
+    --secondary-font:'Raleway', sans-serif;
+    --main-color: #2196F3
+}
+
+body{
+    font-family:var(--main-font)
+}
+/*==== COMPONENTS ===== */
+
+.modal-btn{
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875px;
+    letter-spacing: 0.06em;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    /* color: #FFFFFF; */
+
+}
+.modal-btn-portfolio{
+
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 26px;
+text-align: center;
+letter-spacing: 0.03em;
+
+color: #212121;
+}
+/*==== END COMPONENTS ===== */
+
+/*==== HEADER ===== */
+
+/* WebStudio */
+
+.logo{
+font-family: var(--secondary-font);
+font-style: normal;
+font-weight: 700;
+font-size: 26px;
+line-height: 1.192;
+letter-spacing: 0.03em;
+color: #2196F3;
+}
+.navigation-link{
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 1.143;
+letter-spacing: 0.02em;
+}
+.navigation-link:hover,
+.navigation-link:focus,
+.header-mail:hover,
+.header-mail:focus,
+.header-phone-number:hover,
+.header-phone-number:focus{
+color: var(--main-color);
+}
+.header-mail,
+.header-phone-number{
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 1.143px;
+letter-spacing: 0.02em;
+color:#757575
+}
+
+/*==== END HEADER ===== */
+
+/*==== HERO ===== */
+.main-header{
+
+font-style: normal;
+font-weight: 900;
+font-size: 44px;
+line-height: 1.364;
+text-align: center;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+
+/* color: #FFFFFF; */
+}
+
+/*==== END HERO ===== */
+
+/*==== TEXT ===== */
+.text-title{
+
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 1.143px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+}
+.text-description{
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 1.714px;
+letter-spacing: 0.03em;
+color: #757575;
+}
+/*==== END TEXT ===== */
+
+/*==== ABOUT US ===== */
+.secondary-header{
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 1.167px;
+letter-spacing: 0.03em;
+}
+
+/*==== END ABOUT US ===== */
+
+/*==== OUR TEAM ===== */
+.team-member-name{
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.188;
+letter-spacing: 0.03em;
+}
+.team-member-role{
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 1.188;
+letter-spacing: 0.03em;
+color: #757575;
+}
+/*==== END OUR TEAM ===== */
+
+/*==== FOOTER ===== */
+.address-link-address{
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 1.714px;
+letter-spacing: 0.03em;
+/* color: #FFFFFF; */
+}
+.address-link{
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 1.714px;
+letter-spacing: 0.03em;
+/* color: rgba(255, 255, 255, 0.6); */
+}
+.address-link-address:hover,
+.address-link:hover{
+    color: var(--main-color);
+}
+/*==== END FOOTER ===== */
