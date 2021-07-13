@@ -162,3 +162,20 @@ letter-spacing: 0.03em;
     color: var(--main-color);
 }
 /*==== END FOOTER ===== */
+
+/*=== PORTFOLIO FOOTER === */
+.image-title{
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 2x;
+letter-spacing: 0.06em;
+}
+.image-group{
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 1.875;
+letter-spacing: 0.03em;
+color: #757575;
+}
