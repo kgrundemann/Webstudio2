@@ -14,34 +14,39 @@
 
       <!-- HEADER -->
       <header class="header">
-        <p class="logo"><a class="navigation-logo" href="index.html">Web<span class="logo-black-text">Studio</span></a></p>
+        <div class ="container">
+        <p class="logo"><a class="navigation-logo link" href="index.html">Web<span class="logo-black-text">Studio</span></a></p>
         <nav class="navigation">
-          <ul class="navigation-list">
+          <ul class="navigation-list list">
             <li class="navigation-item">
-              <a class="navigation-link" href="#">Agencja</a>
+              <a class="navigation-link link" href="#">Agencja</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="#">Portfolio</a>
+              <a class="navigation-link link" href="portfolio.html">Portfolio</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="#">Kontakt</a>
-            </li >
-          </ul> 
+              <a class="navigation-link link" href="#">Kontakt</a>
+            </li>
+          </ul>
         </nav>
-        <div>
-          <ul>
-            <li><a class="header-mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a class="header-phone-number" href="tel:+48111111111">+48 111 111 111</a></li>
+        <div class="header-list">
+          <ul class="header-list list">
+            <li><a class="header-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li><a class="header-phone-number link" href="tel:+48111111111">+48 111 111 111</a></li>
           </ul>
         </div>
+      </div>
       </header>
 
-      <!-- END HEADER -->
+      <!-- END HEADER --> 
 
       <!-- MAIN -->
-      <main class="main">
+      <main class="main-portfolio">
+        <section class="section">
+          <h2 hidden>main</h2>
+        <div class="container">
       
-          <ul class="btn-list">
+          <ul class="btn-list list">
             <li class="btn-item">
               <button class="modal-btn-portfolio" type="button">Wszystkie</button>
             </li>
@@ -59,7 +64,7 @@
             </li>
           </ul>
 
-          <ul class="portfolio-list">
+          <ul class="portfolio-list list">
             <li class="portfolio-item" >
               <img src="images/portfolio/image1.jpg" alt="Laptop z otwartą stroną internetową">
                 <p class="image-title">Technocrack</p>
@@ -106,32 +111,33 @@
                 <p class="image-group">Aplikacja</p>
             </li>
           </ul>
-          
-
-
+        </div>
+      </section>
       </main>
 
       <!-- END MAIN -->
 
       <!-- FOOTER -->
       <footer class="footer">
-        <p class="logo"><a class="navigation-logo" href="index.html">Web<span class="logo-black-text-footer">Studio</span></a></p>
-          <address class="address">
-            <ul class="address-list">
-              <li class="address-item">
-                <a class="address-link-address" href="https://goo.gl/maps/jeGpzkVFQrdnBJzt6" target="_blank"
-                  >m. Warszawa, Aleje Jerozolimskie 21</a
-                >
-              </li>
-              <li class="address-item">
-                <a class="address-link" href="mailto:info@example.com">info@example.com</a>
-              </li>
-              <li class="address-item">
-                <a class="address-link" href="tel:+48111111111">+48 111 111 111</a>
-              </li>
-            </ul>
-          </address>
-        </footer>
+        <div class="container">
+        <p class="logo"><a class="navigation-logo link" href="index.html">Web<span class="logo-black-text-footer">Studio</span></a></p>
+        <address class="address">
+          <ul class="address-list list">
+            <li class="address-item">
+              <a class="address-link-address link" href="https://goo.gl/maps/jeGpzkVFQrdnBJzt6" target="_blank"
+                >m. Warszawa, Aleje Jerozolimskie 21</a
+              >
+            </li>
+            <li class="address-item">
+              <a class="address-link link" href="mailto:info@example.com">info@example.com</a>
+            </li>
+            <li class="address-item">
+              <a class="address-link link" href="tel:+48111111111">+48 111 111 111</a>
+            </li>
+          </ul>
+        </address>
+      </div>
+      </footer>
         <!-- END FOOTER -->
     </body>
   </html>

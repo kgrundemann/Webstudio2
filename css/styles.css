@@ -7,6 +7,46 @@
 body{
     font-family:var(--main-font)
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    margin: 0;
+    padding: 0;
+}
+ul,
+ol{
+    margin: 0;
+    padding: 0;
+}
+p{
+    margin: 0;
+    padding: 0;
+}
+img{
+    display: block;
+}
+.list{
+    list-style: none;
+}
+.link{
+    text-decoration: none;
+}
+.container{
+    width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.section:nth-child(2){
+    padding-bottom: 0;
+}
+
 /*==== COMPONENTS ===== */
 
 .modal-btn{
@@ -19,13 +59,13 @@ body{
     display: flex;
     align-items: center;
     text-align: center;
+    padding: 10px 42px;
     background: var(--main-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     color: #FFFFFF;
-
-
 }
+
 .modal-btn-portfolio{
 
 font-style: normal;
@@ -54,7 +94,26 @@ color: #212121;
 
 /*==== HEADER ===== */
 
-/* WebStudio */
+.header .container{
+    display: flex;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    align-items: center;
+    border: 1px solid #ECECEC;
+}
+.navigation-list{
+    display: flex;
+}
+.header-list{
+    display: flex;
+}
+.navigation-item:not(:last-child){
+    margin-right: 46px;
+}
+.header-list{
+    margin-left: auto;
+}
+
 
 .navigation-logo{
 font-family: var(--secondary-font);
@@ -63,6 +122,7 @@ font-weight: 700;
 font-size: 26px;
 line-height: 1.192;
 letter-spacing: 0.03em;
+margin-right: 93px;
 color: #2196F3;
 }
 .logo-black-text{
@@ -108,36 +168,56 @@ line-height: 1.143;
 letter-spacing: 0.02em;
 color:#757575
 }
+.header .header-phone-number{
+margin-left: 50px;
+}
 
 /*==== END HEADER ===== */
 
 /*==== HERO ===== */
+.hero .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 .hero{
     background: #2F303A;
 }
-.main-header{
 
+.main-header{
 font-style: normal;
 font-weight: 900;
 font-size: 44px;
 line-height: 1.364;
-text-align: center;
 letter-spacing: 0.06em;
 text-transform: uppercase;
+margin-bottom:30px;
  color: #FFFFFF; 
+text-align: center;
+width: 655px;
+}
+.modal-btn:focus,
+.modal-btn:hover {
+  background: #757575
 }
 
 /*==== END HERO ===== */
 
 /*==== TEXT ===== */
+.text .container{
+    display: flex;
+}
+.text-list{
+    display: flex;
+}
 .text-title{
-
 font-style: normal;
 font-weight: 700;
 font-size: 14px;
 line-height: 1.143;
 letter-spacing: 0.03em;
 text-transform: uppercase;
+margin-bottom: 10px;
 }
 .text-description{
 font-style: normal;
@@ -150,19 +230,46 @@ color: #757575;
 /*==== END TEXT ===== */
 
 /*==== ABOUT US ===== */
+.about-us .container{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
 .secondary-header{
 font-style: normal;
 font-weight: 700;
 font-size: 36px;
-line-height: 1.167    ;
+line-height: 1.167;
 letter-spacing: 0.03em;
+margin-bottom: 50px;
+}
+.about-us-item:not(:last-child){
+    margin-right: 30px;
+}
+.about-us-list{
+    display: flex;
 }
 
 /*==== END ABOUT US ===== */
 
 /*==== OUR TEAM ===== */
+.our-team .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .our-team{
     background:#F5F4FA;
+}
+.our-team-list{
+    display: flex;
+
+}
+.our-team-photo{
+    margin-bottom: 30px;
+}
+.our-team-item:not(:last-child){
+    margin-right: 30px;
 }
 .team-member-name{
 font-style: normal;
@@ -170,6 +277,8 @@ font-weight: 500;
 font-size: 16px;
 line-height: 1.188;
 letter-spacing: 0.03em;
+margin-bottom: 10px;
+text-align: center;
 }
 .team-member-role{
 font-style: normal;
@@ -177,13 +286,22 @@ font-weight: 400;
 font-size: 16px;
 line-height: 1.188;
 letter-spacing: 0.03em;
+text-align: center;
+margin-bottom: 30px;
 color: #757575;
 }
+
 /*==== END OUR TEAM ===== */
 
 /*==== FOOTER ===== */
 .footer{
     background: #2F303A;
+}
+.footer .logo{
+    margin-bottom: 20px;
+}
+.address-item:not(:last-child){
+    margin-bottom: 9px;
 }
 .address-link-address{
 font-style: normal;
@@ -207,13 +325,38 @@ color: rgba(255, 255, 255, 0.6);
 }
 /*==== END FOOTER ===== */
 
+
+/* PORTFOLIO MAIN */
+.main-portfolio .container{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.btn-list{
+    display: flex;
+    margin-bottom: 50px;
+}
+.btn-item:not(:last-child){
+    margin-right: 9px;
+}
+/* END PORTFOLIO MAIN */
 /*=== PORTFOLIO FOOTER === */
+.portfolio-list{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.portfolio-item:not(:last-child){
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
 .image-title{
 font-style: normal;
 font-weight: 700;
 font-size: 18px;
 line-height: 2;
 letter-spacing: 0.06em;
+margin-bottom: 4px;
 }
 .image-group{
 font-style: normal;
