@@ -182,7 +182,7 @@ margin-left: 50px;
     align-items: center;
   }
 .hero{
-    background: #2F303A;
+    background: var(--main-color);
 }
 
 .main-header{
