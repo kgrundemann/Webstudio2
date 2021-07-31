@@ -311,6 +311,7 @@ color: #757575;
 .social-icon{
     width: 20px;
     height: 20px;
+    fill:#AFB1B8;
 }
 .social-list-link{
     display: flex;
@@ -320,10 +321,9 @@ color: #757575;
     height: 44px;
     border-radius: 50%;
 }
-
 .social-list-link:hover,
 .social-list-link:focus{
-    fill: var(#FFFFFF);
+    fill:#FFFFFF;
     background-color: var(--main-color);
 }
 
