@@ -1,0 +1,31 @@
+.portfolio__list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.portfolio__item {
+	background: #FFFFFF;
+	border: 1px solid #EEEEEE;
+	margin-bottom: 30px;
+}
+
+.portfolio__overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 1.556;
+	letter-spacing: 0.03em;
+	color: #FFFFFF;
+	background: rgba(33, 150, 243, 0.9);
+	overflow: hidden;
+	transform: translateY(100%);
+	display: flex;
+	align-items: center;
+	padding-left: 24px;
+  }
+ 

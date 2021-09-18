@@ -1,0 +1,31 @@
+.about-us__content{
+	display: flex;
+	position: relative;
+}
+.about-us__text{
+	display: flex;
+	position: absolute;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.143;
+	align-items: center;
+	justify-content: center;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color:#FFFFFF;
+	width:370px;
+	height: 70px;
+	background: rgba(47, 48, 58, 0.8);
+	bottom:0;
+}
+
+.about-us__item{
+
+		&:not(:last-child) {
+		margin-right: 30px;
+	}
+}
+
+.about-us__list {
+	display: flex;
+}
