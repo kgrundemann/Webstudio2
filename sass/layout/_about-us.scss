@@ -1,7 +1,14 @@
+@media screen and (max-width: 1199px){
+	.about-us{
+		display: none;
+	}
+}
+
 .about-us__content{
 	display: flex;
 	position: relative;
 }
+
 .about-us__text{
 	display: flex;
 	position: absolute;

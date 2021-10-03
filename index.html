@@ -17,7 +17,7 @@
       <header class="header">
          <section class= "header">
             <div class ="container">
-               <a class="logo logo__light-theme" href="index.html"><span class="logo__accent-text">Web</span>Studio</a>
+               <a class="logo link" href="index.html"><span class="logo__accent-text">Web</span>Studio</a>
                <nav class="navigation">
                   <ul class="menu list">
                      <li class="menu__item">
@@ -31,7 +31,10 @@
                      </li>
                   </ul>
                </nav>
-               <div class="header__list">
+               <button class="hamburger">
+                 <div class="bar"></div>
+               </button>
+               <div class="header__contact">
                   <ul class="header__list list">
                      <li>
                         <a class="contact__link link" href="mailto:info@devstudio.com">
@@ -59,8 +62,8 @@
       <main class="main">
          <section class="hero">
             <div class="container">
-               <h1 class="hero__header">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-               <button class="modal-btn" type="button" data-modal-open>Zamów usługe</button>
+               <h1 class="hero__header">EFEKTYWNE ROZWIĄZANIA <br> DLA WASZEGO BIZNESU</h1>
+               <button class="hero__modal-btn" type="button" data-modal-open>Zamów usługe</button>
             </div>
          </section>
          <!-- END HERO -->
@@ -164,10 +167,10 @@
                <ul class="our-team__list list">
                   <li class="our-team__item">
                      <img class="our-team__photo"
-                        src="images/member-1.jpg"
+                        src="images/team-member-1-mobile.jpg"
                         alt="Mężczyzna w okularach, ubrany w bordową koszulę"/>
-                     <p class="team-member__name">John Doe</p>
-                     <p class="team-member__role">Product Designer</p>
+                     <p class="our-team__member-name">John Doe</p>
+                     <p class="our-team__member-role">Product Designer</p>
                      <ul class="social__list list">
                         <li class="social__list-item">
                            <a class="social__list-link" href="#">
@@ -201,10 +204,10 @@
                   </li>
                   <li class="our-team__item">
                      <img class="our-team__photo"
-                        src="images/member-2.jpg"
+                        src="images/team-member-2-mobile.jpg"
                         alt="Kobieta w okularach, ubrana w marynarkę"/>
-                     <p class="team-member__name">John Doe</p>
-                     <p class="team-member__role">Frontend Developer</p>
+                     <p class="our-team__member-name">John Doe</p>
+                     <p class="our-team__member-role">Frontend Developer</p>
                      <ul class="social__list list">
                         <li class="social__list-item">
                            <a class="social__list-link" href="#">
@@ -238,10 +241,10 @@
                   </li>
                   <li class="our-team__item">
                      <img class="our-team__photo"
-                        src="images/member-3.jpg"
+                        src="images/team-member-3-mobile.jpg"
                         alt="Męzczyzna ubrany w błękitną koszulę"/>
-                     <p class="team-member__name">John Doe</p>
-                     <p class="team-member__role">Frontend Developer</p>
+                     <p class="our-team__member-name">John Doe</p>
+                     <p class="our-team__member-role">Frontend Developer</p>
                      <ul class="social__list list">
                         <li class="social__list-item">
                            <a class="social__list-link" href="#">
@@ -274,11 +277,11 @@
                   </li>
                   <li class="our-team__item">
                      <img class="our-team__photo"
-                        src="images/member-4.jpg"
+                        src="images/team-member-4-mobile.jpg"
                         alt="Mężczyzna w okularach, ubrany w czarny T-shirt"
                         />
-                     <p class="team-member__name">John Doe</p>
-                     <p class="team-member__role">UI Designer</p>
+                     <p class="our-team__member-name">John Doe</p>
+                     <p class="our-team__member-role">UI Designer</p>
                      <ul class="social__list list">
                         <li class="social__list-item">
                            <a class="social__list-link" href="#">
@@ -368,15 +371,15 @@
       <!-- FOOTER -->
       <footer class="footer">
          <div class="container">
-            <div class="footer__left-side">
-               <a class="logo logo__dark-theme" href="index.html"><span class="logo__accent-text">Web</span>Studio</a>
+            <div class="footer__contact">
+               <a class="logo link" href="index.html"><span class="logo__accent-text">Web</span>Studio</a>
                <address class="footer__address">
                         <a class="address__link-direction" href="https://goo.gl/maps/jeGpzkVFQrdnBJzt6" target="_blank">m. Warszawa, Aleje Jerozolimskie 21</a><br>
                         <a class="address__link" href="mailto:info@example.com">info@example.com</a><br>
                         <a class="address__link" href="tel:+48111111111">+48 111 111 111</a><br>
                </address>
             </div>
-            <div class="footer__right-side">
+            <div class="footer__socials">
                <span class="footer__text">DOŁĄCZ DO NAS</span>
                <ul class="footer__list list">
                   <li class="footer__list-item">
@@ -408,17 +411,27 @@
                   </li>
                </ul>
             </div>
-            <div class="newsletter__side">
-                  <span class="footer__text">Zapisz się do newslettera</span>
-                  <form action="#" class="modal__form-newsletter">
-                     <input type="email" name="user_mail" class="newsletter-form__input" placeholder="E-mail" required>
-                     <button type="submit" class="modal__btn-submit-newsletter">
-                        <span class="btn__text">Zapisz się</span> 
-                           <svg class="modal__form-icon-send">
-                              <use href="./images/icons.svg#icon-send"></use>
-                           </svg>
-                     </button>
-                  </form>
+            <div class="footer__newsletter">
+               <form class="footer__form">
+                  <label class="footer__form-field">
+                    Zapisz się do newslettera
+                    <input
+                      class="footer__form-input"
+                      type="email"
+                      placeholder="E-mail"
+                      name="user_email"
+                      required
+                     />
+                  </label>
+                  <button class="footer__form-btn" type="submit">
+                    <span class="register">Zapisz się </span>
+                    <svg class="icon-send" width="24" height="24">
+                      <use href="./images/icons.svg#icon-send"></use>
+                    </svg>
+                  </button>
+                </form>
+              </div>
+            </div>
             </div>
          </div>
       </footer>
