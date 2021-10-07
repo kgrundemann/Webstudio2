@@ -42,3 +42,17 @@ margin-bottom: 30px;
 	color: #757575;
 }
 
+@media screen and (min-width: 768px){
+	.our-team__list{
+		flex-direction: row;
+	  flex-wrap: wrap;
+	  justify-content: center;
+	}
+
+	.our-team__item{
+		&:nth-child(odd){
+		  margin-right: 30px;
+		}
+	}
+	
+}

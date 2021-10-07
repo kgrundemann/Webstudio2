@@ -47,6 +47,7 @@
 	line-height: 1.714;
 	letter-spacing: 0.03em;
 	color: #757575;
+	max-width: 450px;
 }
 
 @media screen and (min-width: 768px){
@@ -56,4 +57,16 @@
 	  flex-wrap: wrap;
 	  justify-content: center;
 	}
+
+.content__item{
+	max-width: 47%;
+
+	&:nth-child(odd){
+	  margin-right: 30px;
+	}
+}
+
+.content__description{
+	min-width: 354px;
+  }
 }

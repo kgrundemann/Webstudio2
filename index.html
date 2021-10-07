@@ -19,7 +19,7 @@
             <div class ="container">
                <a class="logo link" href="index.html"><span class="logo__accent-text">Web</span>Studio</a>
                <nav class="navigation">
-                  <ul class="menu list">
+                  <ul class="menu__list list">
                      <li class="menu__item">
                         <a class="menu__link current link " href="index.html">Agencja</a>
                      </li>
@@ -31,22 +31,19 @@
                      </li>
                   </ul>
                </nav>
-               <button class="hamburger">
-                 <div class="bar"></div>
-               </button>
-               <div class="header__contact">
-                  <ul class="header__list list">
-                     <li>
-                        <a class="contact__link link" href="mailto:info@devstudio.com">
-                           <svg class="mail__icon">
+               <div class="contact__container">
+                  <ul class="contact__list list">
+                     <li class="contact__item">
+                        <a class="contact__link link " href="mailto:info@devstudio.com">
+                           <svg class="contact__icon" width="16" height="12">
                               <use href="./images/icons.svg#icon-mail"></use>
                            </svg>
                            <span>info@devstudio.com</span>
                         </a>
                      </li>
-                     <li>
+                     <li class="contact__item">
                         <a class="contact__link link" href="tel:+48111111111">
-                           <svg class="smartphone__icon">
+                           <svg class="contact__icon" width="10" height="16">
                               <use href="./images/icons.svg#icon-smartphone"></use>
                            </svg>
                            <span>+48 111 111 111</span>
@@ -167,11 +164,27 @@
                <ul class="our-team__list list">
                   <li class="our-team__item">
                      <div class="our-team__grid">
-                     <picture>
-                     <img class="our-team__photo"
-                        src="images/team-member-1-mobile.jpg"
-                        alt="Mężczyzna w okularach, ubrany w bordową koszulę"/>
-                     </picture>
+                        <picture>
+                           <source
+                             srcset="
+                               ./images/team-member-1.jpg 1x,
+                               ./images/team-member-1@2x.jpg 2x
+                             "
+                             media="(min-width: 1200px)"
+                           />
+                           <source
+                             srcset="
+                             ./images/team-member-1-tablet.jpg 1x,
+                             ./images/team-member-1-tablet@2x.jpg 2x
+                             "
+                             media="(min-width: 768px)"
+                           />
+                           <img
+                             src="./images/team-member-1-mobile.jpg"
+                             srcset="./images/team-member-1-mobile@2x.jpg 2x"
+                             alt="Mężczyzna w okularach, ubrany w koszulę"
+                           />
+                         </picture>
                      <p class="our-team__member-name">John Doe</p>
                      <p class="our-team__member-role">Product Designer</p>
                      <ul class="social__list list">
@@ -208,9 +221,27 @@
                   </li>
                   <li class="our-team__item">
                      <div class="our-team__grid">
-                     <img class="our-team__photo"
-                        src="images/team-member-2-mobile.jpg"
-                        alt="Kobieta w okularach, ubrana w marynarkę"/>
+                        <picture>
+                           <source
+                             srcset="
+                               ./images/team-member-2.jpg 1x,
+                               ./images/team-member-2@2x.jpg 2x
+                             "
+                             media="(min-width: 1200px)"
+                           />
+                           <source
+                             srcset="
+                             ./images/team-member-2-tablet.jpg 1x,
+                             ./images/team-member-2-tablet@2x.jpg 2x
+                             "
+                             media="(min-width: 768px)"
+                           />
+                           <img
+                             src="./images/team-member-2-mobile.jpg"
+                             srcset="./images/team-member-2-mobile@2x.jpg 2x"
+                             alt="Kobieta w okularach, ubrana w marynarkę"
+                           />
+                         </picture>
                      <p class="our-team__member-name">John Doe</p>
                      <p class="our-team__member-role">Frontend Developer</p>
                      <ul class="social__list list">
@@ -247,9 +278,27 @@
                   </li>
                   <li class="our-team__item">
                      <div class="our-team__grid">
-                     <img class="our-team__photo"
-                        src="images/team-member-3-mobile.jpg"
-                        alt="Męzczyzna ubrany w błękitną koszulę"/>
+                        <picture>
+                           <source
+                             srcset="
+                               ./images/team-member-3.jpg 1x,
+                               ./images/team-member-3@2x.jpg 2x
+                             "
+                             media="(min-width: 1200px)"
+                           />
+                           <source
+                             srcset="
+                             ./images/team-member-3-tablet.jpg 1x,
+                             ./images/team-member-3-tablet@2x.jpg 2x
+                             "
+                             media="(min-width: 768px)"
+                           />
+                           <img
+                             src="./images/team-member-3-mobile.jpg"
+                             srcset="./images/team-member-3-mobile@2x.jpg 2x"
+                             alt="Męzczyzna ubrany w błękitną koszulę"
+                           />
+                         </picture>
                      <p class="our-team__member-name">John Doe</p>
                      <p class="our-team__member-role">Frontend Developer</p>
                      <ul class="social__list list">
@@ -285,10 +334,27 @@
                   </li>
                   <li class="our-team__item">
                      <div class="our-team__grid">
-                     <img class="our-team__photo"
-                        src="images/team-member-4-mobile.jpg"
-                        alt="Mężczyzna w okularach, ubrany w czarny T-shirt"
-                        />
+                        <picture>
+                           <source
+                             srcset="
+                               ./images/team-member-4.jpg 1x,
+                               ./images/team-member-4@2x.jpg 2x
+                             "
+                             media="(min-width: 1200px)"
+                           />
+                           <source
+                             srcset="
+                             ./images/team-member-4-tablet.jpg 1x,
+                             ./images/team-member-4-tablet@2x.jpg 2x
+                             "
+                             media="(min-width: 768px)"
+                           />
+                           <img
+                             src="./images/team-member-4-mobile.jpg"
+                             srcset="./images/team-member-4-mobile@2x.jpg 2x"
+                             alt="Mężczyzna w okularach, ubrany w czarny T-shirt"
+                           />
+                         </picture>
                      <p class="our-team__member-name">John Doe</p>
                      <p class="our-team__member-role">UI Designer</p>
                      <ul class="social__list list">
