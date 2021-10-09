@@ -70,3 +70,19 @@
 	min-width: 354px;
   }
 }
+
+@media screen and (min-width: 1200px){
+	.content__list{
+		flex-wrap: nowrap;
+	  }
+	}
+	.content__item{
+		max-width: 270px;
+	
+		&:not(:last-child){
+			margin-right: 30px;
+		  }
+		}
+		.content__description{
+			min-width: 270px;
+		  }

@@ -16,9 +16,9 @@
       <header class="header">
          <section class= "header">
             <div class ="container">
-               <a class="logo logo__light-theme" href="index.html"><span class="logo__accent-text">Web</span>Studio</a>
+               <a class="logo link" href="index.html"><span class="logo__accent-text">Web</span>Studio</a>
                <nav class="navigation">
-                  <ul class="menu list">
+                  <ul class="menu__list list">
                      <li class="menu__item">
                         <a class="menu__link link " href="index.html">Agencja</a>
                      </li>
@@ -30,19 +30,19 @@
                      </li>
                   </ul>
                </nav>
-               <div class="header__list">
-                  <ul class="header__list list">
-                     <li>
-                        <a class="contact__link link" href="mailto:info@devstudio.com">
-                           <svg class="mail__icon">
+               <div class="contact__container">
+                  <ul class="contact__list list">
+                     <li class="contact__item">
+                        <a class="contact__link link " href="mailto:info@devstudio.com">
+                           <svg class="contact__icon" width="16" height="12">
                               <use href="./images/icons.svg#icon-mail"></use>
                            </svg>
                            <span>info@devstudio.com</span>
                         </a>
                      </li>
-                     <li>
+                     <li class="contact__item">
                         <a class="contact__link link" href="tel:+48111111111">
-                           <svg class="smartphone__icon">
+                           <svg class="contact__icon" width="10" height="16">
                               <use href="./images/icons.svg#icon-smartphone"></use>
                            </svg>
                            <span>+48 111 111 111</span>
@@ -56,7 +56,7 @@
       <!-- END HEADER --> 
       <!-- MAIN -->
       <main class="main__portfolio">
-         <section class="section">
+         <section class="modal-btn__portfolio-list section">
             <h2 hidden>main</h2>
             <div class="container">
                <ul class="modal-btn__portfolio-list list">
@@ -76,10 +76,30 @@
                      <button class="modal-btn__portfolio" type="button">Marketing</button>
                   </li>
                </ul>
-               <ul class="portfolio__list list">
+               <ul class="portfolio__list">
                   <li class="portfolio__item" >
-                     <div class="box">
-                     <img class="portfolio__image" src="images/portfolio/image1.jpg" alt="Laptop z otwartą stroną internetową">
+                     <div class="portfolio__item-box">
+                        <picture>
+                           <source
+                             srcset="
+                               ./images/portfolio/image1.jpg    1x,
+                               ./images/portfolio/image1@2x.jpg 2x
+                             "
+                             media="(min-width: 1200px)"
+                           />
+                           <source
+                             srcset="
+                               ./images/portfolio/image1-tablet.jpg    1x,
+                               ./images/portfolio/image1-tablet@2x.jpg 2x
+                             "
+                             media="(min-width: 768px)"
+                           />
+                           <img
+                             src="./images/portfolio/image1-mobile.jpg"
+                             srcset="./images/portfolio/image1-mobile@2x.jpg 2x"
+                             alt="Laptop z otwartą stroną internetową"
+                           />
+                         </picture>
                      <div class="portfolio__overlay">
                         <p class="portfolio__item-text">Technocrack jest popularną platformą 
                            wykorzystywaną do rozpowszechniania koronawirusa. 
@@ -88,12 +108,34 @@
                         </p>
                      </div>
                   </div>
-                  <p class="image__title">Technocrack</p>
-                     <p class="image__group">Strona internetowa</p>
+                  <div class="portfolio__description">
+                  <p class="portfolio__image-title">Technocrack</p>
+                  <p class="portfolio__image-group">Strona internetowa</p>
+                   </div>
                   </li>
                   <li class="portfolio__item" >
-                     <div class="box">
-                     <img class="portfolio__image" src="images/portfolio/image2.jpg" alt="Dwóch koszykarzy">
+                     <div class="portfolio__item-box">
+                        <picture>
+                           <source
+                             srcset="
+                               ./images/portfolio/image2.jpg    1x,
+                               ./images/portfolio/image2@2x.jpg 2x
+                             "
+                             media="(min-width: 1200px)"
+                           />
+                           <source
+                             srcset="
+                               ./images/portfolio/image2-tablet.jpg    1x,
+                               ./images/portfolio/image2-tablet@2x.jpg 2x
+                             "
+                             media="(min-width: 768px)"
+                           />
+                           <img
+                             src="./images/portfolio/image2-mobile.jpg"
+                             srcset="./images/portfolio/image2-mobile@2x.jpg 2x"
+                             alt="Dwóch koszykarzy"
+                           />
+                         </picture>
                      <div class="portfolio__overlay">
                         <p class="portfolio__item-text">Technocrack jest popularną platformą 
                            wykorzystywaną do rozpowszechniania koronawirusa. 
@@ -102,12 +144,34 @@
                         </p>
                      </div>
                   </div>
-                     <p class="image__title">Grafika Orlean vs Golden Star</p>
-                     <p class="image__group">Dizajn</p>
+                  <div class="portfolio__description">
+                     <p class="portfolio__image-title">Grafika Orlean vs Golden Star</p>
+                     <p class="portfolio__image-group">Dizajn</p>
+                  </div>
                   </li>
                   <li class="portfolio__item">
-                     <div class="box">
-                     <img class="portfolio__image" src="images/portfolio/image3.jpg" alt="Logo restaruacji z rybą">
+                     <div class="portfolio__item-box">
+                        <picture>
+                           <source
+                             srcset="
+                               ./images/portfolio/image3.jpg    1x,
+                               ./images/portfolio/image3@2x.jpg 2x
+                             "
+                             media="(min-width: 1200px)"
+                           />
+                           <source
+                             srcset="
+                               ./images/portfolio/image3-tablet.jpg    1x,
+                               ./images/portfolio/image3-tablet@2x.jpg 2x
+                             "
+                             media="(min-width: 768px)"
+                           />
+                           <img
+                             src="./images/portfolio/image3-mobile.jpg"
+                             srcset="./images/portfolio/image3-mobile@2x.jpg 2x"
+                             alt="Logo restauracji The Seafood"
+                           />
+                         </picture>
                      <div class="portfolio__overlay">
                         <p class="portfolio__item-text">Technocrack jest popularną platformą 
                            wykorzystywaną do rozpowszechniania koronawirusa. 
@@ -116,12 +180,34 @@
                         </p>
                      </div>
                   </div>
-                     <p class="image__title">Restauracja Seafood</p>
-                     <p class="image__group">Aplikacja</p>
+                  <div class="portfolio__description">
+                     <p class="portfolio__image-title">Restauracja Seafood</p>
+                     <p class="portfolio__image-group">Aplikacja</p>
+                  </div>
                   </li>
                   <li class="portfolio__item" >
-                     <div class="box">
-                     <img class="portfolio__image" src="images/portfolio/image4.jpg" alt="Słuchawki komputerowe">
+                     <div class="portfolio__item-box">
+                        <picture>
+                           <source
+                             srcset="
+                               ./images/portfolio/image4.jpg    1x,
+                               ./images/portfolio/image4@2x.jpg 2x
+                             "
+                             media="(min-width: 1200px)"
+                           />
+                           <source
+                             srcset="
+                               ./images/portfolio/image4-tablet.jpg    1x,
+                               ./images/portfolio/image4-tablet@2x.jpg 2x
+                             "
+                             media="(min-width: 768px)"
+                           />
+                           <img
+                             src="./images/portfolio/image4-mobile.jpg"
+                             srcset="./images/portfolio/image4-mobile@2x.jpg 2x"
+                             alt="Słuchawki komputerowe"
+                           />
+                         </picture>
                      <div class="portfolio__overlay">
                         <p class="portfolio__item-text">Technocrack jest popularną platformą 
                            wykorzystywaną do rozpowszechniania koronawirusa. 
@@ -130,12 +216,34 @@
                         </p>
                      </div>
                   </div>
-                     <p class="image__title">Projekt Prime</p>
-                     <p class="image__group">Marketing</p>
+                  <div class="portfolio__description">
+                     <p class="portfolio__image-title">Projekt Prime</p>
+                     <p class="portfolio__image-group">Marketing</p>
+                  </div>
                   </li>
                   <li class="portfolio__item" >
-                     <div class="box">
-                     <img class="portfolio__image" src="images/portfolio/image5.jpg" alt="Dwa pudełka, jedno biały drugie brązowe">
+                     <div class="portfolio__item-box">
+                        <picture>
+                           <source
+                             srcset="
+                               ./images/portfolio/image5.jpg    1x,
+                               ./images/portfolio/image5@2x.jpg 2x
+                             "
+                             media="(min-width: 1200px)"
+                           />     
+                           <source
+                             srcset="
+                               ./images/portfolio/image5-tablet.jpg    1x,
+                               ./images/portfolio/image5-tablet@2x.jpg 2x
+                             "
+                             media="(min-width: 768px)"
+                           />
+                           <img
+                             src="./images/portfolio/image5-mobile.jpg"
+                             srcset="./images/portfolio/image5-mobile@2x.jpg 2x"
+                             alt="Dwa pudełka, jedno biały drugie brązowe"
+                           />
+                         </picture>
                      <div class="portfolio__overlay">
                         <p class="portfolio__item-text">Technocrack jest popularną platformą 
                            wykorzystywaną do rozpowszechniania koronawirusa. 
@@ -144,12 +252,34 @@
                         </p>
                      </div>
                   </div>
-                     <p class="image__title">Projekt Boxes</p>
-                     <p class="image__group">Aplikacja</p>
+                  <div class="portfolio__description">
+                     <p class="portfolio__image-title">Projekt Boxes</p>
+                     <p class="portfolio__image-group">Aplikacja</p>
+                  </div>
                   </li>
                   <li class="portfolio__item" >
-                     <div class="box">
-                     <img class="portfolio__image" src="images/portfolio/image6.jpg" alt="Monitor apple z włączoną stroną internetową">
+                     <div class="portfolio__item-box">
+                        <picture>
+                           <source
+                             srcset="
+                               ./images/portfolio/image6.jpg    1x,
+                               ./images/portfolio/image6@2x.jpg 2x
+                             "
+                             media="(min-width: 1200px)"
+                           />     
+                           <source
+                             srcset="
+                               ./images/portfolio/image6-tablet.jpg    1x,
+                               ./images/portfolio/image6-tablet@2x.jpg 2x
+                             "
+                             media="(min-width: 768px)"
+                           />
+                           <img
+                             src="./images/portfolio/image6-mobile.jpg"
+                             srcset="./images/portfolio/image6-mobile@2x.jpg 2x"
+                             alt="Monitor apple z włączoną stroną internetową"
+                           />
+                         </picture>
                      <div class="portfolio__overlay">
                         <p class="portfolio__item-text">Technocrack jest popularną platformą 
                            wykorzystywaną do rozpowszechniania koronawirusa. 
@@ -158,12 +288,34 @@
                         </p>
                      </div>
                   </div>
-                     <p class="image__title">Inspiration has no Borders</p>
-                     <p class="image__group">Strona internetowa</p>
+                  <div class="portfolio__description">
+                     <p class="portfolio__image-title">Inspiration has no Borders</p>
+                     <p class="portfolio__image-group">Strona internetowa</p>
+                  </div>
                   </li>
                   <li class="portfolio__item" >
-                     <div class="box">
-                     <img class="portfolio__image" src="images/portfolio/image7.jpg" alt="Otwarty magazyn z napisem limited edition">
+                     <div class="portfolio__item-box">
+                        <picture>
+                           <source
+                             srcset="
+                               ./images/portfolio/image7.jpg    1x,
+                               ./images/portfolio/image7@2x.jpg 2x
+                             "
+                             media="(min-width: 1200px)"
+                           />     
+                           <source
+                             srcset="
+                               ./images/portfolio/image7-tablet.jpg    1x,
+                               ./images/portfolio/image7-tablet@2x.jpg 2x
+                             "
+                             media="(min-width: 768px)"
+                           />
+                           <img
+                             src="./images/portfolio/image7-mobile.jpg"
+                             srcset="./images/portfolio/image7-mobile@2x.jpg 2x"
+                             alt="Otwarty magazyn z napisem limited edition"
+                           />
+                         </picture>
                      <div class="portfolio__overlay">
                         <p class="portfolio__item-text">Technocrack jest popularną platformą 
                            wykorzystywaną do rozpowszechniania koronawirusa. 
@@ -172,12 +324,34 @@
                         </p>
                      </div>
                   </div>
-                     <p class="image__title">Magazyn Limited Edition</p>
-                     <p class="image__group">Dizajn</p>
+                  <div class="portfolio__description">
+                     <p class="portfolio__image-title">Magazyn Limited Edition</p>
+                     <p class="portfolio__image-group">Dizajn</p>
+                  </div>
                   </li>
                   <li class="portfolio__item" >
-                     <div class="box">
-                     <img class="portfolio__image" src="images/portfolio/image8.jpg" alt="Zawieszka z napisem label tag">
+                     <div class="portfolio__item-box">
+                        <picture>
+                           <source
+                             srcset="
+                               ./images/portfolio/image8.jpg    1x,
+                               ./images/portfolio/image8@2x.jpg 2x
+                             "
+                             media="(min-width: 1200px)"
+                           />     
+                           <source
+                             srcset="
+                               ./images/portfolio/image8-tablet.jpg    1x,
+                               ./images/portfolio/image8-tablet@2x.jpg 2x
+                             "
+                             media="(min-width: 768px)"
+                           />
+                           <img
+                             src="./images/portfolio/image8-mobile.jpg"
+                             srcset="./images/portfolio/image8-mobile@2x.jpg 2x"
+                             alt="Zawieszka z napisem label tag"
+                           />
+                         </picture>
                      <div class="portfolio__overlay">
                         <p class="portfolio__item-text">Technocrack jest popularną platformą 
                            wykorzystywaną do rozpowszechniania koronawirusa. 
@@ -186,12 +360,34 @@
                         </p>
                      </div>
                   </div>
-                     <p class="image__title">Projekt LAB</p>
-                     <p class="image__group">Marketing</p>
+                  <div class="portfolio__description">
+                     <p class="portfolio__image-title">Projekt LAB</p>
+                     <p class="portfolio__image-group">Marketing</p>
+                  </div>
                   </li>
                   <li class="portfolio__item" >
-                     <div class="box">
-                     <img class="portfolio__image" src="images/portfolio/image9.jpg" alt="Ręce na klawiaturze laptopa">
+                     <div class="portfolio__item-box">
+                        <picture>
+                           <source
+                             srcset="
+                               ./images/portfolio/image9.jpg    1x,
+                               ./images/portfolio/image9@2x.jpg 2x
+                             "
+                             media="(min-width: 1200px)"
+                           />     
+                           <source
+                             srcset="
+                               ./images/portfolio/image9-tablet.jpg    1x,
+                               ./images/portfolio/image9-tablet@2x.jpg 2x
+                             "
+                             media="(min-width: 768px)"
+                           />
+                           <img
+                             src="./images/portfolio/image9-mobile.jpg"
+                             srcset="./images/portfolio/image9-mobile@2x.jpg 2x"
+                             alt="Ręce na klawiaturze laptopa"
+                           />
+                         </picture>
                      <div class="portfolio__overlay">
                         <p class="portfolio__item-text">Technocrack jest popularną platformą 
                            wykorzystywaną do rozpowszechniania koronawirusa. 
@@ -199,9 +395,11 @@
                             i ataków na niezabezpieczone serwery konkurencji
                         </p>
                      </div>
-                  </div>   
-                     <p class="image__title">Growing Business</p>
-                     <p class="image__group">Aplikacja</p>
+                  </div>
+                  <div class="portfolio__description">
+                     <p class="portfolio__image-title">Growing Business</p>
+                     <p class="portfolio__image-group">Aplikacja</p>
+                  </div>
                   </li>
                </ul>
             </div>
@@ -210,15 +408,15 @@
       <!-- END MAIN -->
       <footer class="footer">
          <div class="container">
-            <div class="footer__left-side">
-               <a class="logo logo__dark-theme" href="index.html"><span class="logo__accent-text">Web</span>Studio</a>
+            <div class="footer__contact">
+               <a class="logo link" href="index.html"><span class="logo__accent-text">Web</span>Studio</a>
                <address class="footer__address">
                         <a class="address__link-direction" href="https://goo.gl/maps/jeGpzkVFQrdnBJzt6" target="_blank">m. Warszawa, Aleje Jerozolimskie 21</a><br>
                         <a class="address__link" href="mailto:info@example.com">info@example.com</a><br>
                         <a class="address__link" href="tel:+48111111111">+48 111 111 111</a><br>
                </address>
             </div>
-            <div class="footer__right-side">
+            <div class="footer__socials">
                <span class="footer__text">DOŁĄCZ DO NAS</span>
                <ul class="footer__list list">
                   <li class="footer__list-item">
@@ -250,17 +448,27 @@
                   </li>
                </ul>
             </div>
-            <div class="newsletter__side">
-                  <span class="footer__text">Zapisz się do newslettera</span>
-                  <form action="#" class="modal__form-newsletter">
-                     <input type="email" name="user_mail" class="newsletter-form__input" placeholder="E-mail" required>
-                     <button type="submit" class="modal__btn-submit-newsletter">
-                        <span class="btn__text">Zapisz się</span> 
-                           <svg class="modal__form-icon-send">
-                              <use href="./images/icons.svg#icon-send"></use>
-                           </svg>
-                     </button>
-                  </form>
+            <div class="footer__newsletter">
+               <form class="footer__form">
+                  <label class="footer__form-field">
+                    Zapisz się do newslettera
+                    <input
+                      class="footer__form-input"
+                      type="email"
+                      placeholder="E-mail"
+                      name="user_email"
+                      required
+                     />
+                  </label>
+                  <button class="footer__form-btn" type="submit">
+                    <span class="register">Zapisz się </span>
+                    <svg class="icon-send" width="24" height="24">
+                      <use href="./images/icons.svg#icon-send"></use>
+                    </svg>
+                  </button>
+                </form>
+              </div>
+            </div>
             </div>
          </div>
       </footer>

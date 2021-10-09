@@ -164,3 +164,44 @@
 	margin-top: 0;
  }
 }
+
+@media screen and (min-width: 1200px){
+	.footer{
+
+		& .container {
+			flex-wrap: nowrap;
+
+			& .logo {
+				display: flex;
+				align-items: flex-start;
+			   }
+		}
+	}
+	
+.footer__contact{
+	margin-right: 70px;
+  }
+
+  .footer__address {
+	display: flex;
+	align-items: flex-start;
+	&:not(:last-child) {
+	padding-bottom: 9px;
+	  }
+}
+  .footer__socials {
+	margin-right: 78px;
+  }
+
+.footer__form {
+	display: flex;
+	flex-direction: row;
+  }
+  .footer__form-input {
+	margin-right: 14px;
+  }
+  .footer__form-btn{
+	margin-top: 88px;
+	margin-bottom: 0;	
+}
+}

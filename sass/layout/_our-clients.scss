@@ -65,3 +65,14 @@
     margin-bottom: 30px;
   }
 }
+
+@media screen and (min-width: 1200px){
+
+  .company__list {
+    flex-wrap: nowrap;
+  }
+
+  .company__list-item:not(:last-child) {
+    margin-right: 30px;
+  }
+}

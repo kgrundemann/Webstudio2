@@ -1,31 +1,103 @@
 .portfolio__list {
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
 }
 
 .portfolio__item {
+	width: 450px;
 	background: #FFFFFF;
 	border: 1px solid #EEEEEE;
 	margin-bottom: 30px;
+
+	&:focus,
+	&:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+	1px 4px 6px rgba(0, 0, 0, 0.16);
+  } 
+}
+
+.portfolio__item-box{
+	position: relative;
+    width: 450px;
+    height: 294px;
+    overflow: hidden;
+    display: flex;
+	
+
+	&:hover .portfolio__overlay {
+	transform: translateY(0);
+	transition: transform 250ms ease-in;
+  }
+}
+
+.portfolio__description{
+	padding: 20px 24px;
+}
+.portfolio__image-title {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 2;
+	letter-spacing: 0.06em;
+	margin-bottom: 4px;
+}
+
+.portfolio__image-group {
+	font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.03em;
+  color: #757575;
 }
 
 .portfolio__overlay {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	font-weight: 400;
-	font-size: 18px;
-	line-height: 1.556;
-	letter-spacing: 0.03em;
-	color: #FFFFFF;
-	background: rgba(33, 150, 243, 0.9);
-	overflow: hidden;
-	transform: translateY(100%);
-	display: flex;
-	align-items: center;
-	padding-left: 24px;
+position: absolute;
+  font-size: 18px;
+  line-height: 1.556;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  background-color: rgba(33, 150, 243, 0.9);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 24px;
   }
  
+  @media screen and (min-width: 768px) and (max-width: 1199px){
+	.portfolio__list{
+	  justify-content: flex-start;
+	}
+	.portfolio__item{
+		width: 354px;
+		&:nth-child(odd){
+		margin-right:30px;
+	  }
+	}
+  
+	.portfolio__item-box {
+	width: 354px;
+	height: 294px;
+  
+  }
+  }
+  
+  @media screen and (min-width: 1200px){
+	.portfolio__list{
+	  justify-content: space-between;
+	}
+  
+	.portfolio__item {
+	width: 370px;
+	}
+  
+	.portfolio__item-box {
+	position: relative;
+	width: 370px;
+	height: 294px;
+	}
+  }
